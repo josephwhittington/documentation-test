@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['msginit_2',['MSGInit',['../class_window.html#a751e6b18b6ae491069f639d78b9c0acd',1,'Window']]],
-  ['msgmiddleware_3',['MSGMiddleWare',['../class_window.html#a0ea8029c55ab5085dbbb4172f5d84c50',1,'Window']]]
+  ['handlemsg_2',['HandleMSG',['../class_window.html#af9dc7a051f93e161c9d9ffa79d3f211a',1,'Window']]]
 ];

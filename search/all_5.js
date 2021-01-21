@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_6',['Window',['../class_window.html',1,'Window'],['../class_window.html#a7baf5138b2f11f6b5724b0fdd269424e',1,'Window::Window()']]]
+  ['setwindowtitle_6',['SetWindowTitle',['../class_window.html#a816b5edf788518b9ae4a5940d53f8952',1,'Window']]]
 ];
