@@ -1,5 +1,8 @@
 #include "Window.h"
 
+/**
+ * Default constructor
+ */
 Window::Window(unsigned int pw, unsigned int ph, const WCHAR* pwindow_title)
 {
 	mhInst = GetModuleHandle(nullptr);
@@ -39,22 +42,32 @@ Window::Window(unsigned int pw, unsigned int ph, const WCHAR* pwindow_title)
 	}
 	ShowWindow(mhWnd, SW_SHOW);
 }
-
+/**
+ * Default destructor
+ */
 Window::~Window()
 {
 	DestroyWindow(mhWnd);
 }
-
+/**
+ * returns instance handle
+ */
 HINSTANCE Window::GetInstance()
 {
 	return mhInst;
 }
 
+/**
+ * Chnages window title
+ */
 void Window::SetWindowTitle(const WCHAR* new_title)
 {
 	SetWindowText(mhWnd, new_title);
 }
 
+/**
+ * ... text ...
+ */
 UINT Window::ProcessMessages()
 {
 	MSG m;
@@ -71,7 +84,9 @@ UINT Window::ProcessMessages()
 
 	return 0;
 }
-
+/**
+ * ... text ...
+ */
 LRESULT Window::MSGInit(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	if (message == WM_CREATE)
@@ -89,7 +104,9 @@ LRESULT Window::MSGInit(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	return DefWindowProc(hWnd, message, wParam, lParam);
 }
-
+/**
+ * ... text ...
+ */
 LRESULT Window::MSGMiddleWare(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	// Grab window instance ptr
@@ -97,7 +114,9 @@ LRESULT Window::MSGMiddleWare(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPa
 	// Call the instance message handler
 	return windowptr->HandleMSG(hWnd, message, wParam, lParam);
 }
-
+/**
+ * ... text ...
+ */
 LRESULT Window::HandleMSG(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	switch (message)

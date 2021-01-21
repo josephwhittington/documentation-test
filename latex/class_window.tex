@@ -1,0 +1,84 @@
+\hypertarget{class_window}{}\doxysection{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_window_a7baf5138b2f11f6b5724b0fdd269424e}{Window}} (unsigned int pw, unsigned int ph, const WCHAR $\ast$pwindow\+\_\+title)
+\item 
+\mbox{\hyperlink{class_window_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window}} ()
+\item 
+HINSTANCE \mbox{\hyperlink{class_window_a69adb193b29dbe2661d863290ab01e80}{Get\+Instance}} ()
+\item 
+void \mbox{\hyperlink{class_window_a816b5edf788518b9ae4a5940d53f8952}{Set\+Window\+Title}} (const WCHAR $\ast$new\+\_\+title)
+\item 
+UINT \mbox{\hyperlink{class_window_abdf14a2ad3fab9ea0518d9a396bad1b0}{Process\+Messages}} ()
+\item 
+LRESULT CALLBACK \mbox{\hyperlink{class_window_af9dc7a051f93e161c9d9ffa79d3f211a}{Handle\+MSG}} (HWND h\+Wnd, UINT message, WPARAM w\+Param, LPARAM l\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static LRESULT CALLBACK \mbox{\hyperlink{class_window_a751e6b18b6ae491069f639d78b9c0acd}{MSGInit}} (HWND h\+Wnd, UINT message, WPARAM w\+Param, LPARAM l\+Param)
+\item 
+static LRESULT CALLBACK \mbox{\hyperlink{class_window_a0ea8029c55ab5085dbbb4172f5d84c50}{MSGMiddle\+Ware}} (HWND h\+Wnd, UINT message, WPARAM w\+Param, LPARAM l\+Param)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_window_a7baf5138b2f11f6b5724b0fdd269424e}\label{class_window_a7baf5138b2f11f6b5724b0fdd269424e}} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{pw,  }\item[{unsigned int}]{ph,  }\item[{const WCHAR $\ast$}]{pwindow\+\_\+title }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{class_window_a245d821e6016fa1f6970ccbbedd635f6}\label{class_window_a245d821e6016fa1f6970ccbbedd635f6}} 
+\index{Window@{Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_window_a69adb193b29dbe2661d863290ab01e80}\label{class_window_a69adb193b29dbe2661d863290ab01e80}} 
+\index{Window@{Window}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily HINSTANCE Window\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns instance handle \mbox{\Hypertarget{class_window_af9dc7a051f93e161c9d9ffa79d3f211a}\label{class_window_af9dc7a051f93e161c9d9ffa79d3f211a}} 
+\index{Window@{Window}!HandleMSG@{HandleMSG}}
+\index{HandleMSG@{HandleMSG}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{HandleMSG()}{HandleMSG()}}
+{\footnotesize\ttfamily LRESULT Window\+::\+Handle\+MSG (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{message,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+... text ... \mbox{\Hypertarget{class_window_a751e6b18b6ae491069f639d78b9c0acd}\label{class_window_a751e6b18b6ae491069f639d78b9c0acd}} 
+\index{Window@{Window}!MSGInit@{MSGInit}}
+\index{MSGInit@{MSGInit}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{MSGInit()}{MSGInit()}}
+{\footnotesize\ttfamily LRESULT Window\+::\+MSGInit (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{message,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+... text ... \mbox{\Hypertarget{class_window_a0ea8029c55ab5085dbbb4172f5d84c50}\label{class_window_a0ea8029c55ab5085dbbb4172f5d84c50}} 
+\index{Window@{Window}!MSGMiddleWare@{MSGMiddleWare}}
+\index{MSGMiddleWare@{MSGMiddleWare}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{MSGMiddleWare()}{MSGMiddleWare()}}
+{\footnotesize\ttfamily LRESULT Window\+::\+MSGMiddle\+Ware (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{message,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+... text ... \mbox{\Hypertarget{class_window_abdf14a2ad3fab9ea0518d9a396bad1b0}\label{class_window_abdf14a2ad3fab9ea0518d9a396bad1b0}} 
+\index{Window@{Window}!ProcessMessages@{ProcessMessages}}
+\index{ProcessMessages@{ProcessMessages}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{ProcessMessages()}{ProcessMessages()}}
+{\footnotesize\ttfamily UINT Window\+::\+Process\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+... text ... \mbox{\Hypertarget{class_window_a816b5edf788518b9ae4a5940d53f8952}\label{class_window_a816b5edf788518b9ae4a5940d53f8952}} 
+\index{Window@{Window}!SetWindowTitle@{SetWindowTitle}}
+\index{SetWindowTitle@{SetWindowTitle}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{SetWindowTitle()}{SetWindowTitle()}}
+{\footnotesize\ttfamily void Window\+::\+Set\+Window\+Title (\begin{DoxyParamCaption}\item[{const WCHAR $\ast$}]{new\+\_\+title }\end{DoxyParamCaption})}
+
+Chnages window title 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+window\+\_\+abstraction\+\_\+sandbox/Window.\+h\item 
+window\+\_\+abstraction\+\_\+sandbox/Window.\+cpp\end{DoxyCompactItemize}
